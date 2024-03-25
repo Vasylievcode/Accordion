@@ -12,14 +12,12 @@
 const listRef = document.querySelector('.js-accordion-list');
 
 function handleBtnClick(event) {
+    event.target.nextElementSibling.classList.toggle("active")
     
-    console.log("currentTarget",event.currentTarget)
-    console.log("target",event.target)
-    console.log("closest", event.currentTarget.closest(".panel"))
-    console.log("closest", event.currentTarget.closest("ul>div"))
+    // console.log("currentTarget",event.currentTarget)
+    // console.log("target",event.target)
+    // console.log("closest", event.target.nextElementSibling)
     
-    
-   
 }
 
 listRef.addEventListener('click', handleBtnClick);
